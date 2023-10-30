@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  
+  <title>Atrium</title>
+  
+</head>
+
+<body>
+  <!-- loader -->
+
+  <!-- <div class="loader_bg">
+    <div class="loader">
+      <div class="iata_code departure_city">
+        <img src="./images/wordmark.svg" alt="loader_img">
+      </div>
+      <div class="plane">
+      </div>
+    
+    </div>
+  </div> -->
+  <!-- loader-end -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <input type="checkbox" name="" id="humburger_input" onclick="isChecked()" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        
+
+        <div class="menu-items">
+          <ul class="media_links" >
+            <li class="link_item pages_link1"  id="projectPage">
+              <nav role="navigation" class="primary-navigation">
+                <ul class="navigation_list">
+                  <li class="dr_item" >
+                    <div class="product_dr">   <span style="font-size: 28px;" class="lang  project_link " key="project">Project </span> <span class="product_dr_strelkea" >&dtrif;</span></div>
+                 
+                    <ul class="dropdown">
+                      
+                      <li id="architecture" ><a class="lang" key='architecture' href="./architecture.html" onclick="changeIndexHtml()">Architecture</a></li>
+                      <li id="interer"  ><a class="lang" key='design' href="./interer.html"onclick="changeIndexHtml()">Interer Design</a></li>
+                      <li id="product"  ><a class="lang" key='project' href="./product.html"onclick="changeIndexHtml()">Product</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li id="aboutPage" class="pages_link">
+              <a href="about.html" class=" lang about_link" key="about">About</a>
+            </li>
+            <li id="contactPage" class="pages_link">
+              <a href="contact.html" class=" contact_link lang" key="contact">Contact</a>
+            </li>
+         
+        
+          </ul>
+        </div>
+ 
+      </div>
+    </nav>
+    <div class="main-logo">
+      <a href="index.html">
+        <img src="./images/whitelogo.svg" alt="logo">
+      </a>
+    </div>
+    <div class="language-container">
+      <p class="translate" id="uz" class="translate">uz</p>
+      <p class="translate" id="ru" class="translate">ru</p>
+      <p class="translate" id="en" class="translate">en</p>
+    </div>
+  </header>
+  <main>
+    <div class="fullpage-slider__slide " id="contact">
+        <div class="centered-parent">
+          <section id="form">
+
+            <div class="mycontainer">
+              <h2 class="form_title lang" key="contact"> CONTACT US
+              </h2>
+              <div class=" all">
+                <div class="login_form">
+                  <form  class="form js-form" onsubmit=" return sendtelegram()">
+                   
+      
+                    <div class="form_div" >
+                      <input type="text " class="form_input js-name" placeholder=" " name="surname" id="surname"
+                        required autocomplete="off">
+                      <label for="surname" class="form_label lang" key="fname">FirstName</label>
+                    </div>
+      
+                    <div class="form_div" >
+                      <input type="text" class="form_input js-lastname" placeholder=" " name="fullname"
+                        id="fullname" required autocomplete="off">
+                      <label for="fullname" class="form_label lang" key="sname">LastName</label>
+                    </div>
+                
+                    <div class="form_div" >
+                      <input type="tel" class="form_input phone" placeholder=" " name="phone" id="phone"
+                        required autocomplete="off" >
+                      <label for="phone" class="form_label lang" key="phone"  >Phone</label>
+                    </div>
+                    <div class="form_div" >
+                      <input type="email" class="form_input js-gmail" placeholder=" " name="gmail" id="email"
+                        required autocomplete="off">
+                      <label for="gmail" class="form_label">Email</label>
+                    </div>
+                    <div class="mains">
+                      <button class="mybtn mybtn-2 hover-slide-right" type="submit">
+                        <span class="lang" key="send">send</span>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+                <div class="iframe_box">
+                  <a href="https://www.google.com/maps/place/Tashkent+City+Park/@41.3084877,69.2544281,14z/data=!4m6!3m5!1s0x38ae8b40d847941d:0x5765a18b352df71e!8m2!3d41.316655!4d69.2484841!16s%2Fg%2F11fpghj827?entry=ttu" target="_blank" class="for_iframe">
+ 
+                  </a>
+                </div>
+              </div>
+            </div>
+           
+          </section>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <div class="footer_sec">
+      <div class="text_left">
+        <p class="lang" key="footer"> We Discover comfort an beauty</p>
+      </div>
+      <div class="social_right">
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- <script>
+    window.replainSettings = { id: '59e81a02-9093-4939-9e84-59126f73a89f' };
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+    var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+    })('https://widget.replain.cc/dist/client.js');
+    </script> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="./js/index.js"></script> -->
+<script src="./js/lang.js"></script>
+<script src="./js/sendtelegram.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+[].forEach.call(document.querySelectorAll(".phone"), function (input) {
+  let keyCode;
+  function mask(event) {
+    event.keyCode && (keyCode = event.keyCode);
+    let pos = this.selectionStart;
+    if (pos < 3) event.preventDefault();
+    let matrix = "+998 (__) ___-__-__",
+      i = 0,
+      def = matrix.replace(/\D/g, ""),
+      val = this.value.replace(/\D/g, ""),
+      newValue = matrix.replace(/[_\d]/g, function (a) {
+        return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+      });
+    i = newValue.indexOf("_");
+    if (i != -1) {
+      i < 5 && (i = 2);
+      newValue = newValue.slice(0, i);
+    }
+    let reg = matrix
+      .substr(0, this.value.length)
+      .replace(/_+/g, function (a) {
+        return "\\d{1," + a.length + "}";
+      })
+      .replace(/[+()]/g, "\\$&");
+    reg = new RegExp("^" + reg + "$");
+    if (
+      !reg.test(this.value) ||
+      this.value.length < 5 ||
+      (keyCode > 47 && keyCode < 58)
+    )
+      this.value = newValue;
+    if (event.type == "blur" && this.value.length < 5) this.value = "";
+  }
+
+  input.addEventListener("input", mask, false);
+  input.addEventListener("focus", mask, false);
+  input.addEventListener("blur", mask, false);
+  input.addEventListener("keydown", mask, false);
+  input.addEventListener("mouseup", (event) => {
+    event.preventDefault();
+    if (input.value.length < 4) {
+      input.setSelectionRange(4, 4);
+    } else {
+      input.setSelectionRange(input.value.length, input.value.length);
+    }
+  });
+});
+ </script>
+
+</html>

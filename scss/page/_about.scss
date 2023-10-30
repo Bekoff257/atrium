@@ -1,0 +1,68 @@
+// teams started
+#team{
+  margin-top: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: calc(100vh - 250px);
+}
+.team_title{
+    height: 44px;
+    font-family: "proxima-nova-condensed","Helvetica",arial,sans-serif;
+
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+color: #fff;
+text-align: center;
+margin-bottom: 40px;
+}
+.team_carousel{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.team_wrapper{
+    width: 256px !important;
+    margin: 0 auto !important;
+
+}
+.team_top{
+    width: 240px;
+    height: 300px;
+    margin: 0 auto !important;
+
+    border: 1px solid #fff;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+.team_bottom{
+    padding: 10px 10px 10px 5px;
+    background-color: transparent;
+    h5{
+        font-weight: 700;
+        box-sizing: inherit;
+        letter-spacing: 2px;
+        font-family: "proxima-nova-condensed","Helvetica",arial,sans-serif;
+        font-size: 18px;
+        color: #fff;
+        // text-shadow: 2px 2px 4px #fff;
+    }
+    p{
+        font-size: 14px;
+        margin-top: 0.33rem;
+        font-family: "proxima-nova","Helvetica",arial,sans-serif;
+        font-weight: 400;
+        color: #fff;
+
+    }
+}
+// teams end

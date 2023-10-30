@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>About</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<div class="">
+					<a href="index.html">
+						<img class="close_icon" src="./images/close_icon.png" alt=""
+					/></a>
+				</div>
+			</nav>
+			<div class="main-logo">
+				<a href="index.html">
+					<img src="./images/whitelogo.svg" alt="logo" />
+				</a>
+			</div>
+			<div class="language-container">
+				<p class="translate" id="uz" class="translate">uz</p>
+				<p class="translate" id="ru" class="translate">ru</p>
+				<p class="translate" id="en" class="translate">en</p>
+			</div>
+		</header>
+		<section id="team">
+			<div class="mycontainer team_box">
+				<h3 class="team_title lang" key="our">Atrium studia</h3>
+				<div class="team_carousel">
+			
+         <div class="team_wrapper">
+          <div class="team_item">
+						<div class="team_top">
+							<img  src="./images/about1.jpg" alt="" />
+						</div>
+						<div class="team_bottom">
+							<h5> Shofiddinov Nizom</h5>
+							<p>Designer</p>
+						</div>
+					</div>
+         </div>
+         
+         <div class="team_wrapper">
+
+           <div class="team_item">
+             <div class="team_top">
+               <img  src="./images/about2.jpg" alt="" />
+             </div>
+             <div class="team_bottom">
+               <h5>Turgunov Ma’mur</h5>
+               <p>Architect</p>
+             </div>
+           </div>
+         </div>
+         <div class="team_wrapper">
+
+           <div class="team_item">
+             <div class="team_top">
+               <img  src="./images/about3.jpg" alt="" />
+             </div>
+             <div class="team_bottom">
+               <h5> Abdukarimov Yax’yo</h5>
+               <p>Artist, Designer</p>
+             </div>
+           </div>
+         </div>
+         <div class="team_wrapper">
+
+           <div class="team_item">
+             <div class="team_top">
+               <img  src="./images/about4.jpg" alt="" />
+             </div>
+             <div class="team_bottom">
+               <h5>  Imomnazarova Ziyoda</h5>
+               <p>Architect</p>
+             </div>
+           </div>
+         </div>
+         <div class="team_wrapper">
+
+           <div class="team_item">
+             <div class="team_top">
+               <img  src="./images/about5.jpg" alt="" />
+             </div>
+             <div class="team_bottom">
+               <h5> Kasimova Ozoda</h5>
+               <p>Architect</p>
+             </div>
+           </div>
+         </div>
+         </div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer_sec">
+				<div class="text_left">
+					<p class="lang" key="footer">We Discover comfort an beauty</p>
+				</div>
+				<div class="social_right">
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-telegram"></i>
+					</a>
+					<a href="#">
+            <i class="fa-brands fa-facebook"></i>
+
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/lang.js"></script>
+    <script>
+      // team_carousel
+      $('.team_carousel').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: false,
+        dots:false,
+        responsive: [
+            {
+                breakpoint: 1293,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 1060,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 811,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 568,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
+    </script>
+	</body>
+</html>

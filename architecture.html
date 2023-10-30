@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  	<!-- loader -->
+
+		<div class="loader_bg">
+			<div class="loader">
+				<div class="iata_code departure_city">
+					<img src="./images/wordmark.svg" alt="loader_img" />
+				</div>
+				<div class="plane"></div>
+			</div>
+		</div>
+		<!-- loader-end -->
+    <header>
+        <nav class="navbar">
+          <div class="navbar-container">
+            <input type="checkbox" name="" id="humburger_input" onclick="isChecked()" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+            <div class="menu-items">
+              <ul class="media_links" >
+                <li class="link_item pages_link1"  id="projectPage">
+                  <nav role="navigation" class="primary-navigation">
+                    <ul class="navigation_list">
+                      <li class="dr_item" >
+                        <div class="product_dr">   <span style="font-size: 28px;" class="lang  project_link " key="project">Project </span> <span class="product_dr_strelkea" >&dtrif;</span></div>
+                     
+                        <ul class="dropdown">
+                          
+                          <li id="architecture" ><a class="lang" key='architecture' href="./architecture.html" onclick="changeIndexHtml()">Architecture</a></li>
+                          <li id="interer"  ><a class="lang" key='design' href="./interer.html"onclick="changeIndexHtml()">Interer Design</a></li>
+                          <li id="product"  ><a class="lang" key='project' href="./product.html"onclick="changeIndexHtml()">Product</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+                <li id="aboutPage" class="pages_link">
+                  <a href="about.html" class=" lang about_link" key="about">About</a>
+                </li>
+                <li id="contactPage" class="pages_link">
+                  <a href="contact.html" class=" contact_link lang" key="contact">Contact</a>
+                </li>
+             
+            
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="./images/whitelogo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="language-container">
+          <p class="translate" id="uz" class="translate">uz</p>
+          <p class="translate" id="ru" class="translate">ru</p>
+          <p class="translate" id="en" class="translate">en</p>
+        </div>
+      </header>
+      
+    <div class="arch_box">
+        <a href="aboutArch.html" class="card_box  arch_bg1 architec_bg1 one_active" >
+            <div class="panel__text  active_content1 ">
+                <h4 class="" >CR7 <span class="">Footwear</span></h4>
+                <p class="hover_text">A new footwear line that further enriches the whole collection and interprets the style of the most demanding and eccentric man.</p>
+                <p class="shop_now">Shop Now</p>
+            </div>
+        </a>
+        <a href="aboutArch.html" class="card_box arch_bg2 architec_bg2" onmousemove="onHover()">
+            <div class="panel__text active_content2 ">
+                <h4 class="" >CR7 <span class="">Footwear</span></h4>
+                <p class="hover_text">A new footwear line that further enriches the whole collection and interprets the style of the most demanding and eccentric man.</p>
+                <p class="shop_now">Shop Now</p>
+            </div>
+        </a>
+        <a href="aboutArch.html" class="card_box arch_bg3 architec_bg3 " onmousemove="onHover()">
+            <div class="panel__text active_content3 ">
+                <h4 class="" >CR7 <span class="">Footwear</span></h4>
+                <p class="hover_text">A new footwear line that further enriches the whole collection and interprets the style of the most demanding and eccentric man.</p>
+                <p class="shop_now">Shop Now</p>
+            </div>
+        </a>
+        <a href="aboutArch.html" class="card_box arch_bg4 architec_bg4 " onmousemove="onHover()">
+            <div class="panel__text active_content4 ">
+                <h4 class="" >CR7 <span class="">Footwear</span></h4>
+                <p class="hover_text">A new footwear line that further enriches the whole collection and interprets the style of the most demanding and eccentric man.</p>
+                <p class="shop_now">Shop Now</p>
+            </div>
+        </a>
+        <a href="aboutArch.html" class="card_box arch_bg5 architec_bg5 " onmousemove="onHover()">
+            <div class="panel__text active_content5 ">
+                <h4 class="" >CR7 <span class="">Footwear</span></h4>
+                <p class="hover_text">A new footwear line that further enriches the whole collection and interprets the style of the most demanding and eccentric man.</p>
+                <p class="shop_now">Shop Now</p>
+            </div>
+        </a>
+        <a href="aboutArch.html" class="card_box arch_bg6 architec_bg6 " onmousemove="onHover()">
+            <div class="panel__text active_content6 ">
+                <h4 class="" >CR7 <span class="">Footwear</span></h4>
+                <p class="hover_text">A new footwear line that further enriches the whole collection and interprets the style of the most demanding and eccentric man.</p>
+                <p class="shop_now">Shop Now</p>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer_sec">
+          <div class="text_left">
+            <p class="lang" key="footer"> We Discover comfort an beauty</p>
+          </div>
+          <div class="social_right">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+
+            </a>
+          </div>
+        </div>
+      </footer>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="./js/lang.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+  <script>
+
+const elArchBox =document.querySelector(".arch_box")
+
+elArchBox.addEventListener("click" ,(e)=>{
+  const id =e.target.classList[1].split("g")[1]
+  console.log(id);
+  localStorage.setItem("arch_id",id)
+
+})
+    const onHover = () => {
+      const active =  document.querySelector(".one_active")
+      if(active){
+        active?.classList?.remove("one_active")
+      }
+      return "hello"
+    }
+  
+
+
+  </script>
+</body>
+
+</html>

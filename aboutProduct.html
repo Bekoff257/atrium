@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+    <link rel="stylesheet" href="./css/main.css">
+    <title>About</title>
+</head>
+<body>
+  	<!-- loader -->
+
+		<div class="loader_bg">
+			<div class="loader">
+				<div class="iata_code departure_city">
+					<img src="./images/wordmark.svg" alt="loader_img" />
+				</div>
+				<div class="plane"></div>
+			</div>
+		</div>
+		<!-- loader-end -->
+  <header>
+    <nav class="navbar">
+      <div class="">
+        <a href="product.html">  <img class="close_icon" src="./images/close_icon.png" alt="" ></a>
+   
+      </div>
+    </nav>
+    <div class="main-logo">
+      <a href="index.html">
+        <img src="./images/whitelogo.svg" alt="logo">
+      </a>
+    </div>
+    <div class="language-container">
+      <p class="translate" id="uz" class="translate">uz</p>
+      <p class="translate" id="ru" class="translate">ru</p>
+      <p class="translate" id="en" class="translate">en</p>
+    </div>
+  </header>
+  <div class="mycontainer">
+    <div class="sliders"></div>
+    <div class="sliders-two"></div>
+  </div>
+      <footer>
+        <div class="footer_sec">
+          <div class="text_left">
+            <p class="lang" key="footer"> We Discover comfort an beauty</p>
+          </div>
+          <div class="social_right">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+
+            </a>
+          </div>
+        </div>
+      </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  <script src="./js/lang.js"></script>
+  <script src="./js/data.js"></script>
+
+<script>
+
+  	const id = localStorage.getItem('pr_id');
+			const sliders = document.querySelector('.sliders');
+			const slider2 = document.querySelector('.sliders-two');
+			console.log(id, 'id');
+			const filteredArr = data.filter((el) => el.id == id);
+			filteredArr.forEach((el, inx, arr) => {
+				sliders.innerHTML += `
+  <div class="slider-block">
+        <div class="double_block">
+            <div class="left">
+              <img src="./images/product${id}_${inx + 1}.JPG" />
+            </div>
+            <div class="right">
+              <p class="right-text lang" key="archtext1" >${el.text}</p>
+            </div>
+          </div>
+    </div>
+  `;
+				slider2.innerHTML += `
+  <div class="slider-block">
+        <div class="slider-wrapper"><img src="./images/product${id}_${
+					inx + 1
+				}.JPG" alt=""></div>
+    </div>
+  `;
+			});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@import "./layout/footer";
+@import "./layout/header";
+@import "./base/fullpage";
+@import "./base/swiper";
+@import "./page/homePage";
+@import "./page/architecture";
+@import "./page/about";
+@font-face {
+  font-family: "Bank Gothic Medium BT";
+  src: url('../font/bankgothic-md-bt/BankGothicMediumBT.ttf');
+}
+
+nav {
+  &.primary-navigation {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -15px;
+    transition: all 0.3s ease-in;
+    font-family: "Proxima Nova", sans-serif;
+    .dr_item {
+      list-style: none;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+      opacity: 0.9;
+      font-family: "Proxima Nova", sans-serif;
+      // transition: all 0.6s ease-in;
+    }
+
+    .dr_item a {
+      font-size: 22px;
+      color: #fff;
+
+    }
+
+    .dropdown{
+display: none;
+      visibility: visible;
+      opacity: 0;
+      left: 0;
+      display: none;
+      background: transparent;
+      transition: all 0.6s ease-in !important;
+      margin-left: 0 !important;
+padding-left: 0 !important;
+li{
+  font-size: 22px !important;
+}
+    }
+
+    .dr_item:hover > .dropdown,
+    .dropdown:hover {
+      
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      // text-align: left;
+      padding-top: 15px;
+      transition: all 0.6s ease-in !important;
+    }
+
+
+  }
+}
+.dropdown a {
+
+    text-decoration: none;
+    max-width: fit-content;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+    line-height: 0px;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    color: #fff !important;
+    padding:  9px 0;
+   margin-left: 0;
+     padding-bottom: 18px  !important;
+     cursor: pointer;
+     &::before {
+       content: "";
+       display: block;
+       position: absolute;
+       bottom: 3px;
+       left: 0;
+       height: 3px;
+       width: 100%;
+       background-color: #fff !important;
+       transform-origin: right top;
+       transform: scale(0, 1);
+       transition: color 0.1s, transform 0.2s ease-out;
+     }
+     &:active::before {
+       background-color: #fff !important;
+     }
+     &:hover::before,
+     &:focus::before {
+       transform-origin: left top;
+       transform: scale(1, 1);
+     }
+ display: inline-block !important;
+ 
+ }
+
+ ul li ul li a { transition: all 0.5s ease; }
+ .dr_item:hover {
+   margin-bottom: 0 !important;
+   margin: 0 !important;
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+}
+body{
+  overflow: hidden;
+}
